@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+
+      #myDIV {
+  display: none;
+  width: 100%;
+ 
+  padding: 10px 5px;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 10px;
+  overflow-x: auto;
+  height: 480px;
+
+}
+     
+      #container{
+       
+        text-align: center;
+       
+      }
+      #column1 {
+        background-color: red;
+        float: left;
+        height: 450px;
+        width: 20%;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border-bottom: 10px;
+        margin:1.80%;
+       
+      }
+      #column2 {
+        background-color: black;
+        float: left;
+        height: 450px;
+        width: 20%;
+        padding: 5px 10px;
+         border-radius: 5px;
+         border-bottom: 10px;
+         margin:1.80%;
+       
+              }
+      #column3 {
+        background-color: blue;
+         float: left;
+        height: 450px;
+        width: 20%;
+        padding: 5px 10px;
+         border-radius: 5px;
+         border-bottom: 10px;
+         margin:1.80%;
+      }
+      .button {
+ 
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  background-color: blue;
+  border: none;
+  border-radius: 15px;
+ 
+}
+      h2 {
+        color: #000000;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="container">
+
+      <button  class="button" onclick="myFunction()">Blogs</button>
+      <div id="myDIV">
+      <div id="column1">
+       
+      </div>
+      <div id="column2">
+       
+      </div>
+      <div id="column3">
+       
+      </div>
+       <div id="column1">
+       
+      </div>
+      <div id="column2">
+       
+      </div>
+      <div id="column3">
+       
+      </div>
+       <div id="column1">
+       
+      </div>
+      <div id="column2">
+       
+      </div>
+     <div id="column3">
+       
+      </div>
+       <div id="column1">
+       
+      </div>
+      <div id="column2">
+       
+      </div>
+      <div id="column3">
+       
+      </div>
+    </div>
+    </section>
+    <script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+  </body>
+</html>

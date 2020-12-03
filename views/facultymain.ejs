@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<title></title>
+</head>
+<body>
+	<% include facultyheader.ejs%>
+	<center>
+		<form action="/adjustments" method="get">
+	<table>
+<tr><td>Type of Leave:<select name="leavetype">
+  <option value="cl" selected="selected">CL</option>
+  <option value="sl" >SL</option>
+  <option value="el">EL</option>
+  <option value="od">OD</option>
+</select></td></tr>
+
+<tr><td>From Date:<input type="date"  name="from"></td></tr>
+
+<tr><td>To Date:<input type="date" name="to"></td></tr>
+
+<tr><td>No of Days:<input type="number" name="noofdays"></td></tr>
+
+<tr><td>Pupose:<input type="text" name="purpose"></td></tr>
+<!--<tr><td> <a href="#" ><input type="submit" value="Go to adjustments" ></a></td></tr>-->
+</table>
+    
+    <table id="myTable">
+        <th>Applied date</th>
+        <th>Adjusted <br>faculty name</th>
+        <th>Adjusted <br>faculty dept</th>
+        <th>session</th>
+        <th>semester</th>
+        <th>section</th>
+        <th>period</th>
+        
+        <th>Adjusting <br>date</th>
+        <tr>
+            <td><input type="date" name="applieddate" id="applieddate" /></td>
+            <td><input type="text" name="adjfname" id="adjfname"/></td>
+            <td><select name="adjfdept" id="adjfdept">
+                <option value="cse">CSE</option>
+                <option value="it">IT</option>
+                <option value="ece">ECE</option>
+                <option value="civil">CIVIL</option>
+                <option value="eee">EEE</option>
+                <option value="mech">MECH</option>
+                </select>
+            </td>
+            <td><select name="session" id="session">
+                <option value="exam">EXAM</option>
+                <option value="lab">LAB</option>
+                <option value="theory">THEORY</option>
+                </select>
+            </td>
+            <td>
+                <select name="semester" id="semester">
+                <option value="one1">1 - 1</option>
+                <option value="one2">1 - 2</option>
+                <option value="two1">2 - 1</option>
+                <option value="two2">2 - 2</option>
+                <option value="three1">3 - 1</option>
+                <option value="three2">3 - 2</option>
+                <option value="four1">4 - 1</option>
+                <option value="four2">4 - 2</option>
+                </select>
+            </td>
+            
+            <td>
+                <select name="section" id="section">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                </select>
+            </td>
+            <td>
+                <select name="period" id="period">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="FN">FN</option>
+                <option value="AN">AN</option>
+                </select>
+            </td>            
+            <td><input type="date" name="adjdate" id="adjdate"></td>
+        </tr>
+    </table>
+    <input type="submit" value="SUBMIT">
+
+</form>
+</center>
+
+</body>
+</html>

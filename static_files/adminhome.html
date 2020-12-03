@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+	<div id="conteneur">
+		  <div id="header"><img src="logo.png" width=80%  height=150 align=center></div>		  	
+	<div id="main">
+
+<div id="login">
+<h3><font color=#0B0B61>Login </strong></font></h3>
+<br></br>
+<form action="/loginsubmit" method="post">
+<label>UserName :</label>
+<input name="loginid" id="login_username" placeholder="username" type="text">
+<label>Password :</label>
+<input name="pwd" id="login_password" placeholder="**********" type="password"><br></br>
+<input name="submit" type="submit" value=" Login ">
+	<!--<span><center><font color="red"><%= miscUtil.getStatusMessage(request, response) %></font></center>
+        <% miscUtil.clearStatusMessage(request, response); %>
+    </span>-->
+    	<input type="hidden" name="option" value="Login" />
+	</form>
+</div>
+</div>
+</body>
+</html>
